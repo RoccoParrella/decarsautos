@@ -1,0 +1,15 @@
+extends ./layout/baseLogin.pug
+block content 
+
+    main(class="main-login")
+        div(class="contenedor-load")
+            img(src="/static/img/decars_logo.jpg", alt="", id="img-login")
+            h1(class="h1-login") Ingrese las fotos mediante URL 
+            form(action="/api/admin/addImgCar", method="post" class="form-load")
+                div(class='display-flex')
+                    each a in data 
+                        div(class="form-group")
+                            input(type="text" class="form-control" name='id' id="id" value=a required)
+                            input(type="text" class="form-control" name="img" placeholder="IMG(URL)" required)
+                div(class="form-group")
+                    button(type="submit" class="btn btn-dark btn-block" id="btn-login") Enviar

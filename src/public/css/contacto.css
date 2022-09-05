@@ -1,0 +1,329 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1e1e1e 0%, #090A0F 100%);
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 2px 10px rgb(22, 22, 22);
+    z-index: 100;
+}
+
+.logo-wsp {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #25d366;
+    margin: 10px;
+    transition: .3s;
+}
+
+.logo-wsp:hover {
+    background-color: #007a2d;
+}
+
+.uk-navbar-nav>li>a {
+    font-family: 'Nunito', sans-serif !important;
+    color: white;
+    font-weight: 500;
+}
+
+.button-menu {
+    background: none;
+    border: none;
+    width: 150px;
+}
+
+.uk-navbar-nav {
+    display: none;
+}
+
+nav {
+    width: 100vh;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: black;
+}
+
+.uk-offcanvas-bar {
+    background-color: black;
+    box-shadow: 2px 2px 10px rgb(22, 22, 22);
+}
+
+.uk-open>.uk-offcanvas-bar {
+    left: none;
+    right: 0;
+}
+
+.main-home {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-contacto{
+    width: 80%;
+    padding: 50px 0;
+}
+
+.div-info{
+    margin-bottom: 50px;
+    background-color: #090A0F;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+
+.div-form{
+    background-color:#090A0F;
+    padding: 20px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.horarios{
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+}
+
+#btn-send{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-control{
+    width: 1fr;
+    margin: 5px 0;
+}
+
+.info-div-display{
+    margin-bottom: 10px;
+}
+
+#logo-nav {
+    width: 100px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.div-footer {
+    width: 80%;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-number {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.footer-number:hover {
+    color: white;
+}
+
+.phone {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-phone, .info-div-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-div-logo {
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.p-redes {
+    margin: 20px 0 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.p-contacto {
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.p-copyright {
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.logo-redes {
+    margin: 0 10px;
+}
+
+.redes {
+    padding: 4px;
+}
+
+.redes:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 576px) {
+
+    .button-menu {
+        display: none;
+    }
+
+    .uk-navbar-nav {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .main-home {
+        margin-top: 0;
+    }
+
+    .main-contacto{
+        min-height: 100vh;
+        margin-top: 100px
+    }
+
+    .email{
+        padding-left: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .div-flex-form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .footer {
+        padding: 40px 0;
+    }
+
+    .div-footer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .display-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-flex {
+        display: flex;
+        width: 600px;
+        align-items: start;
+        justify-content: space-around;
+    }
+
+    .p-redes {
+        margin: 0px 0 10px;
+    }
+
+    .p-copyright {
+        margin-top: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .div-contacto{
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-between;        
+    }
+
+    .main-contacto{
+        margin: 20px 0;
+    }
+
+    .div-info{
+        width: 33%;
+        margin-right:20px !important;
+        margin: 0;
+
+    }
+    
+    .div-form{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .div-contacto{
+        width: 1000px;
+    }
+}

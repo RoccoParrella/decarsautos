@@ -1,0 +1,23 @@
+extends ./layout/baseAdmin.pug
+block content 
+
+    main
+        .contenedor-login
+            img(src="/static/img/decars_logo.jpg", alt="Logo DECARS")#img-login
+        .contenedor-autos 
+            ul.ul-autos 
+                each autos in data 
+                        li.li-autos
+                            .div-img-autos
+                                img(class="img-autos" src=autos.img)
+                            .div-p-autos
+                                p.p-brand= `${autos.brand} ${autos.model}`
+                                p.p-year= `${autos.year} | ${autos.KM} km`
+                                p.p-price= `U$${autos.price}`
+                            .buttons-auto
+                                a(href=`/api/admin/deleteCar/${autos._id}`).button-cars Eliminar Auto
+                                form(action="/admin/modifyCar" method='get') 
+                                    input(type="number" name="number" id="number" placeholder='Numero de fotos')
+                                    input(type="text" name="id" id="id" value=autos._id)
+                                    button(href="").button-cars Agregar imagenes
+

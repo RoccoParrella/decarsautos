@@ -1,0 +1,10 @@
+extends ./layout/baseAdmin.pug
+block content 
+
+    main
+        .contenedor-login
+            img(src="/static/img/decars_logo.jpg", alt="Logo DECARS")#img-login
+        .contenedor-opcions
+            a(href="/admin/cargar").a-boton Cargar vehiculos
+            a(href="/admin/vehiculos").a-boton Modificar vehiculos
+
