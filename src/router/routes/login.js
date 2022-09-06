@@ -15,4 +15,8 @@ router.post('/login', passport.authenticate('login', {
     failureFlash: true
 }))
 
+router.get('/*', async (req,res) => {
+    res.sendStatus(404)
+})
+
 module.exports = router;
