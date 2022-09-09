@@ -30,12 +30,14 @@
         app.use(passport.session());
         app.use("/static", express.static(path.join(__dirname, 'public')))
 
+        //APIS
+        app.use('/api', apiRoute)
+
         // ROUTES
         app.use('/', routerHome)
         app.use('/', routerLogin)
 
-        //APIS
-        app.use('/api', apiRoute)
+
 
         console.log('Mongo conected')
     }).catch((err) => {
